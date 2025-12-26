@@ -14,20 +14,6 @@ modules:
   - shared-modules/glew/glew.json
   - shared-modules/glu/glu-9.json
 
-  - name: x264
-    config-opts:
-      - --enable-lto
-      - --enable-pic
-      - --enable-shared
-      - --disable-cli
-    sources:
-      - type: git
-        url: https://code.videolan.org/videolan/x264.git
-        commit: 0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee
-    cleanup:
-      - /include
-      - /lib/pkgconfig
-
   - name: xfont-utils
     modules:
       - name: font-util
